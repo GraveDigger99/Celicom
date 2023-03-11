@@ -1,179 +1,505 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230312004331">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «celicom»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «celicom»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
+	<div class="wrapper">
+		<header data-scroll="20" class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link menu__link_download _icon-file-download">Скачать презентацию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<div data-da=".menu__body,1150,last" class="header__social social">
+						<a href="#" class="social__telegram _icon-telegram"></a>
+						<a href="#" class="social__wk _icon-wk"></a>
+						<a href="#" class="social__youtube _icon-youtube"></a>
+						<a href="#" class="social__instagram _icon-instagram"></a>
+					</div>
+					<div data-da=".menu__body,768,last" class="header__callback callback">
+						<a href="tel:+79314442044" class="callback__link _icon-phone">+7 931 444-20-44</a>
+					</div>
+					<div data-da=".menu__body,550,last" class="header__cta">
+						<a data-popup="#popup-callback" href="#" class="header__button">Связаться по ZOOM</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section data-fullscreen class="hero">
+				<div class="hero__container">
+					<button type="button" data-goto=".company" type="button" class="hero__scroll _icon-scroll-down"></button>
+					<div class="hero__wrapper">
+						<h1 class="hero__title title"> <span>Профессиональный</span> видеопродакшен в Москве</h1>
+						<p class="hero__text">Творчество и бизнес с реальным проектным управлением</p>
+						<div class="hero__footer">
+							<div class="hero__buttons">
+								<a href="#" class="button">Обсудить проект</a>
+								<a href="#" class="brief-button">
+									<span>Заполнить бриф</span>
+								</a>
+							</div>
+							<a href="#" class="hero__showrell showrell">
+								<span>Showreel</span>
+								<span class="showrell__icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="company">
+				<div class="company__container">
+					<div class="company__items">
+						<div class="company__item item-company">
+							<span class="item-company__value">1000+</span>
+							<p class="item-company__text">реализованных проектов</p>
+						</div>
+						<img src="img/company/line.svg" alt="icon:line">
+						<div class="company__item item-company">
+							<span class="item-company__value">120+</span>
+							<p class="item-company__text">лет совместного опыта у команды</p>
+						</div>
+						<img src="img/company/line.svg" alt="icon:line">
+						<div class="company__item item-company">
+							<span class="item-company__value">100%</span>
+							<p class="item-company__text">вовлечения в каждый проект</p>
+						</div>
+					</div>
+					<div class="company__body">
+						<div class="company__text">
+							<p>В производстве видео, как и в любом другом деле, опыт является одним из решающих факторов
+								успеха, но именно
+								в видеопродакшне особенно критически важно, чтобы каждый из цехов производства знал своё дело,
+								сложно найти индустрию,
+								где вклад каждого может настолько критически повлиять на результат.
+							</p>
+							<p>
+								В Celicom каждый знает своё дело, и каждый на своём месте, вы это почувствуете уже с первых
+								минут совместной работы.
+							</p>
+						</div>
+						<div class="company__quotes">
+							<span>
+								Мы давно в деле, поэтому если происходит что-то неправильное — скорее всего это происходит
+								не в нашу смену
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="services">
+				<div class="services__container">
+					<h2 class="services__subtitle subtitle">Мы создаём</h2>
+					<div class="services__items">
+						<div class="services__item">
+							<div class="services__header">Реклама</div>
+							<div class="services__content">
+								<span class="services__number">01</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Музыкальные клипы</div>
+							<div class="services__content">
+								<span class="services__number">02</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/02.webp" type="image/webp"><img src="img/services/02.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Видеомаркетинг наборы</div>
+							<div class="services__content">
+								<span class="services__number">03</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/03.webp" type="image/webp"><img src="img/services/03.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">YouTube контент</div>
+							<div class="services__content">
+								<span class="services__number">04</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/04.webp" type="image/webp"><img src="img/services/04.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Игровое кино</div>
+							<div class="services__content">
+								<span class="services__number">05</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/05.webp" type="image/webp"><img src="img/services/05.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Документальные фильмы</div>
+							<div class="services__content">
+								<span class="services__number">06</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/06.webp" type="image/webp"><img src="img/services/06.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Корпоративное видео</div>
+							<div class="services__content">
+								<span class="services__number">07</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/07.webp" type="image/webp"><img src="img/services/07.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__header">Брендинг</div>
+							<div class="services__content">
+								<span class="services__number">08</span>
+								<div class="services__image">
+									<picture><source srcset="img/services/08.webp" type="image/webp"><img src="img/services/08.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio">
+				<div class="portfolio__container">
+					<div class="portfolio__top">
+						<h2 class="portfolio__subtitle subtitle">
+							Реализованные
+							<span>Проекты</span>
+						</h2>
+						<div class="portfolio__actions">
+							<a href="#" class="portfolio__all">Все проекты</a>
+							<div class="portfolio__controll controll">
+								<button type="button" class="controll__prev">1</button>
+								<button type="button" class="controll__next"></button>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__slider swiper">
+						<div class="portfolio__wrapper swiper-wrapper">
+							<div class="portfolio__slide portfolio__slide_solo swiper-slide slide-portfolio">
+								<div class="slide-portfolio__top">
+									<div class="slide-portfolio__header">
+										Аккумуляторный фонарь KOS113Lit
+									</div>
+									<div class="slide-portfolio__details">
+										<span>3D-графика</span>
+										<span>|</span>
+										<span>Реклама</span>
+									</div>
+								</div>
+								<div class="slide-portfolio__button">12</div>
+								<picture><source srcset="img/portfolio/01.webp" type="image/webp"><img src="img/portfolio/01.png" alt="image"></picture>
+							</div>
+							<div class="portfolio__slide portfolio__slide_column swiper-slide slide-portfolio">
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Botanee
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Реклама</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.png" alt="image"></picture>
+								</div>
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Anna Kravt
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Музыкальный клип</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.png" alt="image"></picture>
+								</div>
+							</div>
+							<div class="portfolio__slide portfolio__slide_column swiper-slide slide-portfolio">
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Botanee
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Реклама</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.png" alt="image"></picture>
+								</div>
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Anna Kravt
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Музыкальный клип</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.png" alt="image"></picture>
+								</div>
+							</div>
+							<div class="portfolio__slide portfolio__slide_column swiper-slide slide-portfolio">
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Botanee
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Реклама</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.png" alt="image"></picture>
+								</div>
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Anna Kravt
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Музыкальный клип</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.png" alt="image"></picture>
+								</div>
+							</div>
+							<div class="portfolio__slide portfolio__slide_column swiper-slide slide-portfolio">
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Botanee
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Реклама</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.png" alt="image"></picture>
+								</div>
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Anna Kravt
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Музыкальный клип</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.png" alt="image"></picture>
+								</div>
+							</div>
+							<div class="portfolio__slide portfolio__slide_column swiper-slide slide-portfolio">
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Botanee
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Реклама</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.png" alt="image"></picture>
+								</div>
+								<div class="slide-portfolio__item">
+									<div class="slide-portfolio__top">
+										<div class="slide-portfolio__header">
+											Anna Kravt
+										</div>
+										<div class="slide-portfolio__details">
+											<span>Музыкальный клип</span>
+										</div>
+									</div>
+									<div class="slide-portfolio__button">12</div>
+									<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.png" alt="image"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="stages">
+				<div class="stages__container">
+					<h2 class="stages__subtitle subtitle subtitle_light">Этапы работы</h2>
+					<div class="stages__items">
+						<div class="stages__item">
+							<div class="stages__count">01</div>
+							<div class="stages__name">Бриф</div>
+							<p class="stages__text">Пройдите удобный квиз-бриф, это займёт на более 15 минут, и это будет 95%
+								базовой информации, которая нам нужна</p>
+						</div>
+						<div class="stages__item">
+							<div class="stages__count">02</div>
+							<div class="stages__name">Обсуждение</div>
+							<p class="stages__text">Мы начинаем менеджмент. Оформляем начальную документацию проекта,
+								связываемся с вами, уточняем детали установочной
+								бриф-встречи</p>
+						</div>
+						<div class="stages__item">
+							<div class="stages__count">03</div>
+							<div class="stages__name">Встреча</div>
+							<p class="stages__text">Установочная встреча. Мы уточняем все необходимые детали</p>
+						</div>
+						<div class="stages__item">
+							<div class="stages__count">04</div>
+							<div class="stages__name">Согласование сметы</div>
+							<p class="stages__text">Подготовка сметы и её одобрение. Уточняем финансы, ресурсы, даты,
+								утверждаем вехи, и прочие административные и проектные
+								детали</p>
+						</div>
+						<div class="stages__item">
+							<div class="stages__count">05</div>
+							<div class="stages__name">Начало работы</div>
+							<p class="stages__text">Начинаем проект, утверждаем работу цехом, двигаем проект по этапам
+								реализации</p>
+						</div>
+						<div class="stages__item">
+							<div class="stages__count">06</div>
+							<div class="stages__name">Сдача проекта</div>
+							<p class="stages__text">Сдаём проект, подписываем акт, жмём руку, считаем профит</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<div class="contact__wrapper">
+						<div class="contact__content">
+							<h2 class="contact__label label">У вас есть проект или необходима консультация?</h2>
+							<p class="contact__text">Оставьте свой телефон и мы вам перезвоним</p>
+						</div>
+						<form class="contact__form-block form-block" action="#">
+							<div class="form-block__inputs">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="input">
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Номер телефона" class="input">
+							</div>
+							<div class="form-block__footer form-block__footer_row">
+								<button type="submit" class="button button_form">Отправить</button>
+								<p class="form-block__privacy">Отправляя свои данные вы даете согласие на их обработку
+									в соответствии <a href="#">с политикой конфидециальности</a> </p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="whom">
+				<div class="whom__container">
+					<h2 class="whom__subtitle subtitle">Для кого мы работаем</h2>
+					<div class="whom__items">
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/01.webp" type="image/webp"><img src="img/whom/01.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Рекламные агентства</p>
+						</div>
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/02.webp" type="image/webp"><img src="img/whom/02.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Продюсерские центры</p>
+						</div>
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/03.webp" type="image/webp"><img src="img/whom/03.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Корпоративный бизнес</p>
+						</div>
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/04.webp" type="image/webp"><img src="img/whom/04.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Event агентства</p>
+						</div>
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/05.webp" type="image/webp"><img src="img/whom/05.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Творческие люди</p>
+						</div>
+						<div class="whom__item">
+							<div class="whom__image">
+								<picture><source srcset="img/whom/06.webp" type="image/webp"><img src="img/whom/06.png" alt="image"></picture>
+							</div>
+							<p class="whom__text">Кинокомпании</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
 		</div>
 	</div>
+</div> -->
+
+
+	<div id="popup-callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img class="popup__light" src="img/icons/close.svg" alt="icon:close">
+					<img class="popup__dark" src="img/icons/close-dark.svg" alt="icon:close">
+				</button>
+				<div class="popup__header">Оставьте заявку</div>
+				<p class="popup__description">Мы вам перезвоним и подробно проконсультируем</p>
+				<form class="popup__form-block form-block" action="#">
+					<div class="form-block__inputs">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="input">
+						<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Номер телефона" class="input">
+					</div>
+					<div class="form-block__footer">
+						<button type="submit" class="button button_form">Отправить</button>
+						<p class="form-block__privacy">Отправляя свои данные вы даете согласие на их обработку в соответствии <a href="#">с политикой конфидециальности</a> </p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230312004331"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
